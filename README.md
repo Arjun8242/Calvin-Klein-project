@@ -1,2 +1,5 @@
 # calvinklein-clone
-this is my first project using HTML, CSS , and some JS of rhe clone of calvin klein website
+hello everyone
+this is my first ever project of cloning the website of calvin klein
+for this i have used HTML,CSS and a little bit of javascript.
+Thank you.
