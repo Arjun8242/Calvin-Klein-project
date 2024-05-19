@@ -1,0 +1,750 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+#blackbar{
+    display: flex;
+    background-color: black;
+    color:aliceblue;
+    position: relative;
+    text-align: center;
+    width:100vw;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 25px;
+}
+#limited,#flash{
+    font-weight: bold;   
+}
+header{
+   height: 120px;
+}
+#limited, #discount {
+    margin: 0; 
+}
+.blacklinks{
+    color:aliceblue;
+    margin-left: 7px;
+}
+#fifty, #flash{ 
+    margin-left: 4px;
+}
+#nav{
+    top: 43px;
+        height: 2cm;
+    width: 100vw;
+    z-index: 999;
+    overflow-x: hidden;
+    transition: 0.3s;
+    color: black;
+    background-color: #FFF9F1;
+
+}
+#nav.stickynav{
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    transition: 0.3s;
+}
+#nav:hover{
+    background-color: #fff;
+}
+#menucontainer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 35px;
+}
+
+#menu{
+    position: relative;
+    left: 6%;
+}
+#menu ul{
+    display: flex;
+    position: relative;
+    list-style-type: none;
+}
+#menuul li{
+    position: relative;
+}
+#menuelements{
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+#menuul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color:black; /* Color of hover line */
+    transition: width 0.3s ease;
+  }
+  
+  #menuul li:hover::after {
+    width: 100%;
+  }
+#heading{
+position:relative;
+right: calc(10% - 16px);
+}
+#iconscontainer{
+    position: relative;
+    right: 7%;
+}
+#icon{
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+}
+#menubtn{
+    display:none;
+}
+body{
+    background-color:#FFF9F1;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#uppertextcontainer{
+    align-items: center;
+    color: black;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top:1.3cm ;
+    margin-bottom: 55px;
+}
+#mid{
+    font-weight:bold;
+    font-size: 22px;
+    margin-bottom: 3vh;
+}
+#forty{
+    font-size: 41px;
+}
+#twenty{
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#shopmndw{
+    display: block;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+#shopmndw a{
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom:#cccccc solid 1px;
+    margin: 0px 34px 0px 0px;
+    padding-bottom: 4px;
+}
+#shopmndw a:hover{
+    border-bottom: solid black 1px;
+}
+
+#shopmndw a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+#firstphoto{
+    background-image: url(firstphoto.webp);
+    width:100vw;
+    height: 110vh;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+    
+}
+#secondphoto{
+    background-image: url(secondphoto.webp);
+    
+
+}
+#thirdphoto{
+    background-image: url(thirdphoto.webp);
+
+
+}
+#fourthphoto{
+    background-image: url(fourthphoto.webp);
+}
+#fifthphoto{
+    background-image: url(fifthphoto.webp);
+}
+#sixthphoto{
+    background-image: url(sixthphoto.webp);
+}
+#seventhphoto{
+    background-image: url(seventhphoto.webp);
+}
+.photo{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100%;
+} 
+
+ #headertext,#textparagraph,#textbtn a{
+    color:aliceblue;
+ }
+ #headertext{
+    font-size: 43px;
+ }
+ #phototextcontainer{
+    position: relative;
+   bottom: 0; 
+    text-align: center;
+}
+#secondset{
+    display:flex;
+    justify-content: space-between;
+    height: 110vh;
+    width: 100vw;
+    margin-bottom: 8px;
+}
+#secondset > div {
+    width: 50%; 
+    background-color: #ccc; 
+}
+
+#secondset > div:first-child {
+    margin-right: 4px; 
+    margin-top: 8px;
+}
+
+#secondset > div:last-child {
+    margin-left: 4px; 
+    margin-top: 8px;
+}
+#thirdset{
+    display:flex;
+    justify-content: space-between;
+    height: 110vh;
+    width: 100vw;
+    margin-bottom: 8px;
+}
+#thirdset > div {
+    width: 50%; 
+    background-color: #ccc; 
+}
+
+#thirdset > div:first-child {
+    margin: 8px 4px 8px 0px;
+}
+
+#thirdset > div:last-child {
+    margin: 8px 0px 8px 4px;   
+}
+#downwardnav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    margin-top:13vh;
+    font-size: large;
+}
+#womentab{
+    margin-right: 16px;
+color: #808080;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#womentab:hover{
+    border-bottom: solid rgba(0,0,0,0.4) 2px;
+}
+#mentab{
+    margin-left: 16px;
+    cursor: pointer;
+    color: #808080;
+    display: block;
+    margin-bottom: 30px;
+}
+#mentab:hover{
+    border-bottom: solid black 2px;
+}
+#MenSection{
+    display: flex;
+}
+#menli,#womenli{
+    list-style-type: none;
+}
+#menli li,#womenli li{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#WomenSection{
+    display: none;
+}
+#MenSection,#WomenSection{
+    align-items: center;
+    justify-content: center;
+}
+#sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 71vw;
+    background-color:black;
+    top: 0;
+    left: 0;
+    display: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    transition: transform 1.0s ease-in-out;
+    overflow-y:scroll;
+}
+#closebtn{
+    color: aliceblue;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}
+
+.sidenav{
+    position: relative;
+    top: 4%;
+    left: 8%;
+    color:aliceblue;
+    margin-right: 23px;
+    font-size: 14px;
+    max-height: 20px;
+}
+#sidelistnew,#sidelistwomen,#sidelistmen,#sidelistunderwear,#sidelistkids,#sidelisthome,#sidelistsale{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    color: #FFF9F1;
+    position: relative;
+    left: calc(-34% );
+    top: 19%;
+    justify-content: space-between;
+   
+}
+#sidenavnew img,#sidenavwomen img,#sidenavmen img,#sidenavkids img,#sidenavunderwear img,#sidenavhome img,#sidenavsale img{
+max-width: 300px;
+max-height: 400px;
+height: auto;
+width: auto;
+}
+#sidenavnew,#sidenavwomen,#sidenavmen,#sidenavkids ,#sidenavunderwear,#sidenavhome,#sidenavsale{
+    position:relative;
+    right: -95%;
+    top: 0%;
+    background-size: cover;
+}
+#sidelistnew{
+    display: flex;
+}
+#sidelistwomen{
+    display: none;
+}
+#sidelistmen{
+    display: none;
+}
+#sidelistunderwear{
+    display: none;
+}
+#sidelistkids{
+    display: none;
+}
+#sidelisthome{
+    display: none;
+}
+#sidelistsale{
+    display: none;
+}
+
+
+#sidelistnew ul,#sidelistwomen ul,#sidelistmen ul,#sidelistunderwear ul,#sidelistkids ul,#sidelisthome ul,#sidelistsale ul{
+    list-style-type: none;
+    position:fixed;
+}
+#shopnew{
+    font-size: 14px;
+}
+.sidenavelements{
+    margin-left: 0;
+    margin-bottom: 40px;
+
+}
+#sidenavelement{
+    font-size: 25px;
+    color: gray;
+}
+#sidenavelement:hover{
+    color: #FFF9F1;
+}
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+    margin-top: 20px;
+
+}
+footer p{
+    position: relative;
+    color: #999;
+    text-align: center;
+    font-family:Arial;
+    font-size: 0.9rem;
+    line-height: 1.1;
+}
+#footer{
+    padding: 60px 0px 60px 0px;
+}
+#footercontent{
+    margin-top: 56px;
+}
+.upper,.lower{
+    display:flex;
+    flex-direction: column;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 10px 0px 10px;
+}
+.firstcolumn,.secondcolumn,.thirdcolumn,.fourthcolumn{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px 0px 8px;
+    text-align: left;
+    margin-top: 0px;
+}
+.firstcolumn,a,h5 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+li a,.socialicons a{
+    color: #808080;
+    font-size: 14px;
+}
+.contactus span{
+    color: #808080; 
+    font-size: 14px;
+}
+.firstcolumn a{
+padding-bottom: 27px;
+}
+.firstcolumn{
+ position: relative;
+left: 0px;
+}
+.secondcolumn li,h5{
+    margin-bottom: 16px;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+}
+.contactus li{
+color: #808080;
+text-decoration: none;
+list-style-type: none;
+}
+#chaticon{
+    margin-right: 5px;
+}
+.thirdcolumn li,h5{
+    margin-bottom: 16px;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+}
+.signupcolumn,.getyourbtn{
+    margin-bottom: 32px;
+}
+.signupmsg{
+    margin-bottom: 28px;
+}
+.fourthcolumn{
+flex-basis: 33%;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+text-align: left;
+}
+#button{
+    cursor: pointer;
+    width: 100%;
+    height :44px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+.getyourbtn{
+    height: 44px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 412px;
+    background-color:#FFFFFF;
+    border-radius: 2.5px;
+}
+.help li,.about li,.explore li{
+    list-style-type: none;
+}
+.signupcolumn p,.signupmsg p{
+    text-align: left;
+
+}
+.socialicons a{
+    cursor: pointer;
+    font-size: 22px;
+    padding-right: 30px;
+}
+.calvinklein{
+margin-top: 45px;
+font-size: 25px;
+color: #FFF9F1;
+padding-left: 88px;
+display: inline-flex;
+}
+.firstcolumn a,.secondcolumn a,.thirdcolumn a{
+    position: relative;
+}
+.firstcolumn a::after{
+    content: '';
+    position:absolute;
+    height: 1px;
+    left: 0px;
+    bottom:16px;
+    width: 0;
+    background:#FFFFFF;
+    transition: width 0.4s;
+}
+.firstcolumn a:hover::after{
+    width:14em;
+}
+.secondcolumn a:hover::after{
+    width:100%;
+}
+.thirdcolumn a:hover::after{
+    width:100%;
+}
+.secondcolumn a::after{
+    content: '';
+    position:absolute;
+    height: 1px;
+    left: 0px;
+    bottom:-4px;
+    width: 0;
+    background:#808080;
+    transition: width 0.2s;
+}
+.thirdcolumn a::after{
+    content: '';
+    position:absolute;
+    height: 1px;
+    left: 0px;
+    bottom:-4px;
+    width: 0;
+    background:#808080;
+    transition: width 0.2s;
+}
+#headingsecondary{
+    display:none;
+    position: relative;
+    top: 5%;
+    align-items: center;
+}
+@media(max-width:1024px){
+    #menuelements{
+        display: none;
+    }
+    #menubtn{
+        display: flex;
+    }
+    #menu{
+        position: relative;
+        left: 2vw;
+        margin-left: 10px;
+    }
+    /*#sidenavnew img,#sidenavwomen img,#sidenavmen img,#sidenavkids img,#sidenavunderwear img,#sidenavhome img,#sidenavsale img{
+        height: 350px;
+        width: auto;
+    }*/
+}
+@media(min-width:1025px){
+    #icon{
+        margin-left: 0.9cm;
+    }}
+
+@media(max-width:1399px){
+    #menu{
+        position: relative;
+        left: 1vw;
+        margin-left: 5px;
+    }
+    #iconscontainer{
+        right: 1vw;
+        margin-right: 10px;
+    }
+    .sidenav{
+        position: relative;
+        left: 2%;
+        top:5%;
+    }
+    #closebtn{
+        top: 5%;
+    }
+    #sidelistnew,#sidelistwomen,#sidelistmen,#sidelistunderwear,#sidelisthome,#sidelistsale,#sidelistkids{
+        position: absolute;
+        left: 4%;
+        top: 20%;
+    }
+    #sidenavnew,#sidenavwomen,#sidenavmen,#sidenavkids ,#sidenavunderwear,#sidenavhome,#sidenavsale{
+        position:relative;
+        left: 57%;
+        top: 2%;
+    }   
+}
+@media(max-width:1024px){
+    #heading{
+        left: 5%;
+    }
+    #icon{
+        margin-left: 20px;
+    }
+}
+@media(max-width:767px){
+    #iconscontainer #icon .fa-user {
+        display: none;
+    }
+    #icon{
+        margin-left:12px ;
+    }
+    #sidelistnew,#sidelistwomen,#sidelistmen,#sidelistunderwear,#sidelisthome,#sidelistsale,#sidelistkids{
+        display: none;
+    }
+    #sidebar{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidenav{
+        margin-bottom: 39px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        margin-left: 5px;
+    }
+    #headingsecondary{
+        display:flex;
+        position: relative;
+        top: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(min-width:1400px){
+    .upper{
+        padding: 0px 80px 0px 80px;
+    }
+}
+@media(max-width:1279px){
+    .secondcolumn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        flex-basis: 30%;  
+    }
+    .help,.contactus{
+        padding: 0px;
+        flex-basis: 50%;
+    }
+    .help{
+        padding-right: 5px;
+    }
+    .firstcolumn,.thirdcolumn,.fourthcolumn{
+        padding: 0px;
+    }
+    .firstcolumn,.thirdcolumn,.fourthcolumn,.secondcolumn{
+        flex-basis: 25%;
+    }
+
+}
+@media(max-width:990px){
+    .upper{
+        flex-direction: column;
+    }
+    .upper:nth-child(1){order: 2;}
+    .upper:nth-child(2){order: 1;}
+    .upper:nth-child(3){order: 3;}
+    .upper:nth-child(4){order: 4;}
+    #footer p{
+        text-align: left;
+        padding-left: 22px;
+    }
+    .firstcolumn,.secondcolumn,.thirdcolumn,.fourthcolumn{
+        padding-left: 10px;
+        flex-basis: 100%;
+    }
+    .secondcolumn{
+        width:97vw;
+    }
+    .getyourbtn{
+        width:90%;
+        max-width: 990px;
+    }
+    #sidebar{
+        width: 100%;
+    }
+    .sidenav{
+        position: relative;
+        left: 2%;
+        top:12%;
+    }
+
+    #sidelistnew,#sidelistwomen,#sidelistmen,#sidelistunderwear,#sidelisthome,#sidelistsale,#sidelistkids{
+        top: 26%;
+    }
+   /* #sidenavnew,#sidenavwomen,#sidenavmen,#sidenavkids ,#sidenavunderwear,#sidenavhome,#sidenavsale{
+        position: relative;
+        right:;
+    }*/
+
+}
+@media(min-width:993px){
+    #gridset{
+        display: grid;
+        grid-template-columns: calc(66% - 4px)calc(34% - 4px);
+        grid-template-rows:calc(50% - 4px)calc(50% - 4px);
+        grid-gap: 8px;
+        height: 110vh;
+        width: 100vw;
+    }
+    #firstphoto{
+        width: 100%;
+    }
+    #gridset #firstphoto{
+        grid-column: 1 / 2;
+      grid-row: 1 / span 2;
+    }
+    #gridset #secondphoto {
+        grid-column: 2 / 2;
+        grid-row: 1 / 2;
+      }
+      
+      #gridset #thirdphoto{
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+     }
+}
+
